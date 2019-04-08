@@ -70,6 +70,7 @@
             this.clearButton.TabIndex = 2;
             this.clearButton.Text = "Очистить";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // readButton
             // 
@@ -79,6 +80,7 @@
             this.readButton.TabIndex = 3;
             this.readButton.Text = "Читать";
             this.readButton.UseVisualStyleBackColor = true;
+            this.readButton.Click += new System.EventHandler(this.ReadButton_Click);
             // 
             // leftListBox
             // 
