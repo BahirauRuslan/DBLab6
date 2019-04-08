@@ -50,8 +50,8 @@ namespace DBLab6
         public DataSet GetTable()
         {
             return _creator.CreateDataSet(
-                DBCustomConnection.GetConnection(), 
-                "SELECT Id, FullName, Number FROM Students JOIN Groups ON Students.GroupId = Groups.Id", 
+                DBCustomConnection.GetConnection(),
+                "SELECT Students.Id, FullName, Number FROM Students JOIN Groups ON Students.GroupId = Groups.Id", 
                 "Students");
         }
     }
